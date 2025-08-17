@@ -1,5 +1,9 @@
 #!/bin/bash
 
+git clone https://gitee.com/unitsvc/code-server
+cd code-server
+git checkout build/250818-3991
+
 # step 1
 git config -f .gitmodules submodule.lib/vscode.url https://gitee.com/microsoft/vscode.git
 git submodule sync
