@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 git clone https://gitee.com/unitsvc/code-server
 cd code-server
@@ -33,6 +33,8 @@ g++ --version
 npm install -g nrm
 nrm use huawei
 
+rm -rf node_modules package-lock.json
+npm cache clean --force
 npm install
 npm run build
 
